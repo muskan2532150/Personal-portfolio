@@ -4,9 +4,9 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
    
-    validates: :name, presence: true , length:{maximum: 50}
-    validates: :github_link, presence: true
-    validates: :linkedln_link, presence: true 
-    validates: :email, presence: true 
+    validates :name, presence: true , length:{maximum: 50}
+    validates :github_link, presence: true
+    validates :linkedln_link, presence: true 
+    validates :email, presence: true 
 
 end
